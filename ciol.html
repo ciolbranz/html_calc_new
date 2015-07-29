@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="myScript.js"></script>
+<title>HTML Calculator</title>
+</head>
+<body>
+
+<h1>HTML Calculator</h1>
+
+<form name="Calculator" class="frm-calc">
+<input type="textfield" class="txtfield" id="Display" value="0" readonly>
+<br>
+<input type="button" value="CE" onClick="clearallfield()" >
+<input type="button" value="C" onClick="clearcurrent()">
+<input type="button" value="&larr;" onClick="back()">
+<input type="button" name="divide" value="/" onClick="Operations('/')">
+<br>
+<input type="button" name="seven" value="7" onClick="AddNumbers('7')">
+<input type="button" name="eight" value="8" onClick="AddNumbers('8')">
+<input type="button" name="nine" value="9" onClick="AddNumbers('9')">
+<input type="button" name="plus" value="+" onClick="Operations('+')">
+<br>
+<input type="button" name="four" value="4" onClick="AddNumbers('4')">
+<input type="button" name="five" value="5" onClick="AddNumbers('5')">
+<input type="button" name="six" value="6" onClick="AddNumbers('6')">
+<input type="button" name="minus" value="-" onClick="Operations('-')">
+<br>
+<input type="button" name="one" value="1" onClick="AddNumbers('1')">
+<input type="button" name="two" value="2" onClick="AddNumbers('2')">
+<input type="button" name="three" value="3" onClick="AddNumbers('3')">
+<input type="button" name="multi" value="*" onClick="Operations('*')">
+<br>
+<input type="button" name="zero" value="0" onClick="AddNumbers('0')">
+<input type="button" name="dot" value="." onClick="Period('.')">
+<input type="button" value="&#x221A;" onClick="square()">
+<input type="button" value="=" onClick="Calculate()">
+
+</form>
+
+
+</body>
+</html>
